@@ -25,7 +25,8 @@ const perguntas = [
   {
     enunciado:
       "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-    alternativas: [
+   imagem: "img/2.png",
+      alternativas: [
           {
       texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
       afirmacao: "afirmação"
@@ -39,7 +40,8 @@ const perguntas = [
   {
     enunciado:
       "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-    alternativas: [
+    imagem: "img/3.png",
+      alternativas: [
       {
       texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
       afirmacao: "afirmação"
@@ -53,7 +55,8 @@ const perguntas = [
   {
     enunciado:
       "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-    alternativas: [
+    imagem: "img/4.png",
+      alternativas: [
       {
       texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
       afirmacao: "afirmação"
@@ -67,7 +70,8 @@ const perguntas = [
   {
     enunciado:
       "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
-    alternativas: [
+   imagem: "img/5.png",
+      alternativas: [
       {
       texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
       afirmacao: "afirmação"
