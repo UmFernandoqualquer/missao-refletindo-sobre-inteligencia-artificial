@@ -1,6 +1,6 @@
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternantivas = document.querySelector(".caixa-alternativas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector("caixa-resultado");
 const textoResultado = document.querySelector("texto-resultado");
 
@@ -91,17 +91,26 @@ function mostraPergunta(){
   }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternantivas.textContent = "";
+    caixaAlternativas.textContent = "";
+
+     if (perguntaAtual.imagem && caixaImagem) {
+    caixaImagem.src = perguntaAtual.imagem;
+    caixaImagem.alt = `Imagem referente à pergunta: ${perguntaAtual.enunciado}`;
+    caixaImagem.style.display = 'block'; 
+  } else if (caixaImagem) {
+    caixaImagem.style.display = 'none';
+  }
+
     mostraAlternativa();
 }
 
 function mostraAlternativa(){
-    for (const alternantiva of perguntaAtual.alternantivas){
+    for (const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("botton");
-        botaoAlternativas.textContent = alternantiva.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternantiva));
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         
-        caixaAlternantivas.appendChild(botaoAlternativas);
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
   }
 
