@@ -3,12 +3,14 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector("caixa-resultado");
 const textoResultado = document.querySelector("texto-resultado");
+const caixaImagem = document.querySelector(".caixa-imagem")
 
 const perguntas = [
   {
     enunciado:
       "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
-    alternativas: [
+    imagem: "img/1.png",
+      alternativas: [
         {
             texto: "Isso é assustador!", 
             afirmacao: "afirmação"
