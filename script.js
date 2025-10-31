@@ -19,6 +19,7 @@ const perguntas = [
     
           },
         ]
+  },
   {
     enunciado:
       "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
@@ -68,7 +69,7 @@ const perguntas = [
       {
       texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
       afirmacao: "afirmação"
-      }
+      },
       {
       texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
       afirmacao: "afirmação"
@@ -81,14 +82,14 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let hustoriaFinal = "";
+let historiaFinal = "";
 
 function mostraPergunta(){
   if (atual >= perguntas.length) {
     mostraResultado();
     return;
   }
-    perguntaAtual = perguntas(atual);
+    perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternantivas.textContent = "";
     mostraAlternativa();
